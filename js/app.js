@@ -3,7 +3,7 @@
 
 /* =========================================
    VYRON AI - APPLICATION
-   VERSION 2.0.0
+   VERSION 2.1.0
 ========================================= */
 
 (function (window, document) {
@@ -411,6 +411,116 @@
       `;
 
       this.updatePreviewRatio();
+
+    },
+
+    /* =====================================
+       STAGE 02.5.1 - MY LIBRARY
+    ===================================== */
+
+    renderLibrary() {
+
+      const app = window.VYRON.elements.app;
+
+      if (!app) return;
+
+      app.innerHTML = `
+
+        <section class="library-page">
+
+          <div class="library-header">
+
+            <div>
+              <div class="eyebrow">
+                YOUR CREATIVE COLLECTION
+              </div>
+
+              <h1>My Library</h1>
+
+              <p>
+                Manage and organize your generated video projects.
+              </p>
+            </div>
+
+            <a href="#create" class="primary-button">
+              ✧ Create video
+            </a>
+
+          </div>
+
+          <div class="library-overview">
+
+            <div class="library-stat">
+              <span>Total videos</span>
+              <strong>0</strong>
+            </div>
+
+            <div class="library-stat">
+              <span>Saved projects</span>
+              <strong>0</strong>
+            </div>
+
+            <div class="library-stat">
+              <span>Storage used</span>
+              <strong>0 MB</strong>
+            </div>
+
+          </div>
+
+          <div class="library-toolbar">
+
+            <div class="library-search">
+
+              <span>⌕</span>
+
+              <input
+                type="search"
+                placeholder="Search your creations..."
+                disabled
+                aria-label="Search your creations"
+              />
+
+            </div>
+
+            <div class="library-filter">
+
+              <select disabled aria-label="Filter videos">
+                <option>All videos</option>
+              </select>
+
+              <select disabled aria-label="Sort videos">
+                <option>Recently created</option>
+              </select>
+
+            </div>
+
+          </div>
+
+          <section class="library-content">
+
+            <div class="library-empty">
+
+              <div class="library-empty-icon">▤</div>
+
+              <h2>Your creative library is empty</h2>
+
+              <p>
+                Your generated videos and saved projects
+                will appear here when video generation
+                and storage become available.
+              </p>
+
+              <a href="#create" class="primary-button">
+                ✧ Start creating
+              </a>
+
+            </div>
+
+          </section>
+
+        </section>
+
+      `;
 
     },
 
