@@ -417,3 +417,218 @@
   }
 
 }
+
+/* =========================================
+   VYRON AI - STAGE 02.5.4
+   MY LIBRARY RESPONSIVENESS
+========================================= */
+
+/* TABLETS AND SMALL LAPTOPS */
+
+@media (max-width: 1100px) {
+
+  .library-overview {
+    gap: 13px;
+  }
+
+  .library-stat {
+    padding: 17px;
+  }
+
+  .library-filter select {
+    min-width: 125px;
+  }
+
+}
+
+/* TABLETS AND MOBILE */
+
+@media (max-width: 800px) {
+
+  .library-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 17px;
+  }
+
+  .library-header h1 {
+    font-size: 29px;
+  }
+
+  .library-overview {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 11px;
+  }
+
+  .library-stat {
+    min-height: 115px;
+    padding: 14px;
+  }
+
+  .library-stat strong {
+    font-size: 23px;
+  }
+
+  .library-toolbar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .library-search {
+    width: 100%;
+  }
+
+  .library-filter {
+    width: 100%;
+  }
+
+  .library-filter select {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .library-content {
+    min-height: 320px;
+  }
+
+}
+
+/* SMARTPHONES */
+
+@media (max-width: 550px) {
+
+  .library-header {
+    margin-bottom: 23px;
+    gap: 15px;
+  }
+
+  .library-header h1 {
+    font-size: 26px;
+  }
+
+  .library-header p {
+    font-size: 11px;
+    line-height: 1.8;
+  }
+
+  .library-header .primary-button {
+    width: 100%;
+  }
+
+  .library-overview {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 11px;
+    margin-bottom: 23px;
+  }
+
+  .library-stat {
+    min-height: 100px;
+    padding: 16px;
+    gap: 8px;
+  }
+
+  .library-stat span {
+    font-size: 10px;
+  }
+
+  .library-stat strong {
+    font-size: 24px;
+  }
+
+  .library-toolbar {
+    gap: 11px;
+    margin-bottom: 16px;
+  }
+
+  .library-search {
+    min-height: 44px;
+    padding: 0 11px;
+  }
+
+  .library-filter {
+    flex-direction: column;
+    gap: 9px;
+  }
+
+  .library-filter select {
+    width: 100%;
+    min-height: 43px;
+    font-size: 10px;
+  }
+
+  .library-content {
+    min-height: 300px;
+    padding: 30px 17px;
+    border-radius: 12px;
+  }
+
+  .library-empty {
+    max-width: 100%;
+  }
+
+  .library-empty-icon {
+    width: 67px;
+    height: 67px;
+    font-size: 28px;
+    margin-bottom: 18px;
+  }
+
+  .library-empty h2 {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .library-empty p {
+    font-size: 10px;
+    line-height: 1.8;
+  }
+
+  .library-empty .primary-button {
+    width: 100%;
+  }
+
+}
+
+/* EXTRA SMALL SMARTPHONES */
+
+@media (max-width: 360px) {
+
+  .library-header h1 {
+    font-size: 23px;
+  }
+
+  .library-stat {
+    padding: 14px;
+  }
+
+  .library-content {
+    padding: 25px 12px;
+  }
+
+  .library-empty h2 {
+    font-size: 14px;
+  }
+
+  .library-empty p {
+    font-size: 9px;
+  }
+
+}
+
+/* LARGE SCREENS */
+
+@media (min-width: 1400px) {
+
+  .library-overview {
+    gap: 20px;
+  }
+
+  .library-stat {
+    padding: 23px;
+  }
+
+  .library-content {
+    min-height: 390px;
+  }
+
+}
