@@ -3,7 +3,7 @@
 
 /* =========================================
    VYRON AI - ROUTER
-   VERSION 2.0.0
+   VERSION 2.1.0
 ========================================= */
 
 (function (window, document) {
@@ -34,11 +34,7 @@
 
     library: {
       title: "My Library",
-      render: () => window.VYRON_APP.renderPlaceholder(
-        "My Library",
-        "Your generated videos and saved projects will appear here.",
-        "▤"
-      )
+      render: () => window.VYRON_APP.renderLibrary()
     },
 
     /* =====================================
