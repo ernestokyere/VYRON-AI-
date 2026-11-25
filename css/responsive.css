@@ -125,3 +125,60 @@
   }
 
 }
+
+/* =========================================
+   VYRON AI - DASHBOARD RESPONSIVENESS
+========================================= */
+
+@media (max-width: 800px) {
+
+  .welcome-section {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .quick-stats {
+    gap: 12px;
+  }
+
+  .stat-card {
+    padding: 14px;
+  }
+
+  .creation-grid {
+    gap: 13px;
+  }
+
+  .creation-visual {
+    height: 130px;
+  }
+
+}
+
+@media (max-width: 550px) {
+
+  .quick-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-card {
+    min-height: 120px;
+  }
+
+  .creation-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .creation-visual {
+    height: 155px;
+  }
+
+  .welcome-section h1 {
+    font-size: 27px;
+  }
+
+  .section-heading h2 {
+    font-size: 15px;
+  }
+
+}
