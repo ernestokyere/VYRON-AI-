@@ -182,3 +182,238 @@
   }
 
 }
+
+/* =========================================
+   VYRON AI - STAGE 02.4
+   CREATION WORKSPACE RESPONSIVENESS
+========================================= */
+
+/* TABLETS AND SMALL LAPTOPS */
+
+@media (max-width: 1100px) {
+
+  .video-workspace {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .workspace-preview {
+    max-width: 100%;
+  }
+
+  .preview-screen {
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+}
+
+/* TABLETS AND MOBILE */
+
+@media (max-width: 800px) {
+
+  .workspace-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .workspace-header h1 {
+    font-size: 29px;
+  }
+
+  .video-workspace {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 17px;
+  }
+
+  .workspace-panel {
+    padding: 20px;
+  }
+
+  .workspace-preview {
+    width: 100%;
+  }
+
+  .preview-screen {
+    max-width: 100%;
+  }
+
+}
+
+/* SMARTPHONES */
+
+@media (max-width: 550px) {
+
+  .workspace-header {
+    margin-bottom: 22px;
+  }
+
+  .workspace-header h1 {
+    font-size: 25px;
+  }
+
+  .workspace-header p {
+    font-size: 12px;
+    line-height: 1.7;
+  }
+
+  .workspace-status {
+    font-size: 9px;
+  }
+
+  .workspace-main,
+  .workspace-preview {
+    border-radius: 12px;
+  }
+
+  .workspace-mode-selector {
+    padding: 10px;
+    gap: 6px;
+  }
+
+  .mode-tab {
+    min-height: 43px;
+    padding: 8px 5px;
+    gap: 6px;
+    font-size: 10px;
+  }
+
+  .mode-tab span {
+    font-size: 15px;
+  }
+
+  .workspace-panel {
+    padding: 15px;
+  }
+
+  .field-heading {
+    align-items: flex-start;
+  }
+
+  .field-heading > span {
+    font-size: 8px;
+  }
+
+  .prompt-input {
+    min-height: 150px;
+    padding: 13px;
+    font-size: 11px;
+  }
+
+  .prompt-footer {
+    font-size: 9px;
+  }
+
+  .upload-dropzone {
+    min-height: 165px;
+    padding: 17px;
+  }
+
+  .upload-preview img {
+    max-height: 210px;
+  }
+
+  .settings-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 13px;
+  }
+
+  .generation-footer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .generation-cost {
+    margin-bottom: 2px;
+  }
+
+  .generate-button {
+    width: 100%;
+  }
+
+  .integration-notice {
+    font-size: 9px;
+  }
+
+  .workspace-preview {
+    padding: 15px;
+  }
+
+  .preview-heading h2 {
+    font-size: 12px;
+  }
+
+  .preview-placeholder {
+    padding: 10px;
+  }
+
+  .preview-placeholder h3 {
+    font-size: 11px;
+  }
+
+  .preview-placeholder p {
+    font-size: 9px;
+  }
+
+}
+
+/* EXTRA SMALL SMARTPHONES */
+
+@media (max-width: 360px) {
+
+  .workspace-mode-selector {
+    grid-template-columns: 1fr;
+  }
+
+  .mode-tab {
+    width: 100%;
+    font-size: 11px;
+  }
+
+  .workspace-panel {
+    padding: 12px;
+  }
+
+  .workspace-header h1 {
+    font-size: 23px;
+  }
+
+  .field-heading > span {
+    letter-spacing: .4px;
+  }
+
+  .prompt-footer {
+    flex-wrap: wrap;
+  }
+
+}
+
+/* LANDSCAPE AND LARGE SCREENS */
+
+@media (min-width: 1400px) {
+
+  .video-workspace {
+    grid-template-columns: minmax(0, 1.5fr) minmax(320px, .85fr);
+    gap: 25px;
+  }
+
+  .workspace-panel {
+    padding: 27px;
+  }
+
+  .workspace-preview {
+    padding: 23px;
+  }
+
+}
+
+/* ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .sidebar,
+  .mobile-overlay {
+    transition: none;
+  }
+
+}
