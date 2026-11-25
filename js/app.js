@@ -3,7 +3,7 @@
 
 /* =========================================
    VYRON AI - APPLICATION
-   VERSION 2.1.0
+   VERSION 2.2.0
 ========================================= */
 
 (function (window, document) {
@@ -514,6 +514,186 @@
                 ✧ Start creating
               </a>
 
+            </div>
+
+          </section>
+
+        </section>
+
+      `;
+
+    },
+
+    /* =====================================
+       STAGE 02.6.1 - AI MODELS
+    ===================================== */
+
+    renderModels() {
+
+      const app = window.VYRON.elements.app;
+
+      if (!app) return;
+
+      app.innerHTML = `
+
+        <section class="models-page">
+
+          <div class="models-header">
+
+            <div>
+              <div class="eyebrow">
+                VYRON AI INTELLIGENCE
+              </div>
+
+              <h1>AI Models</h1>
+
+              <p>
+                Discover the AI technologies that will power
+                your next creative video experience.
+              </p>
+            </div>
+
+            <div class="models-status">
+              <span></span>
+              Model integration pending
+            </div>
+
+          </div>
+
+          <section class="models-hero">
+
+            <div class="models-hero-content">
+
+              <div class="models-hero-label">
+                <span>✦</span>
+                CREATIVE INTELLIGENCE
+              </div>
+
+              <h2>
+                Find the right intelligence
+                for your creativity.
+              </h2>
+
+              <p>
+                Explore the generation technologies
+                being prepared for the VYRON AI studio.
+              </p>
+
+              <a href="#create" class="primary-button">
+                ✧ Open Creation Studio
+              </a>
+
+            </div>
+
+            <div class="models-hero-visual">
+              <div class="models-orbit orbit-one"></div>
+              <div class="models-orbit orbit-two"></div>
+              <div class="models-core">V</div>
+            </div>
+
+          </section>
+
+          <div class="models-section-heading">
+
+            <div>
+              <h2>Generation categories</h2>
+              <p>Explore the planned model capabilities.</p>
+            </div>
+
+          </div>
+
+          <div class="models-grid">
+
+            <article class="model-card">
+
+              <div class="model-card-top">
+
+                <div class="model-icon text-model-icon">
+                  ✧
+                </div>
+
+                <span class="model-status">
+                  Coming soon
+                </span>
+
+              </div>
+
+              <div class="model-category">
+                TEXT GENERATION
+              </div>
+
+              <h3>Text to Video</h3>
+
+              <p>
+                Transform written prompts into cinematic
+                video scenes with AI-powered generation.
+              </p>
+
+              <div class="model-capabilities">
+                <span>Prompt-based creation</span>
+                <span>Cinematic scenes</span>
+                <span>Creative direction</span>
+              </div>
+
+              <a href="#create" class="model-action">
+                Open creation studio →
+              </a>
+
+            </article>
+
+            <article class="model-card">
+
+              <div class="model-card-top">
+
+                <div class="model-icon image-model-icon">
+                  ▧
+                </div>
+
+                <span class="model-status">
+                  Coming soon
+                </span>
+
+              </div>
+
+              <div class="model-category">
+                IMAGE GENERATION
+              </div>
+
+              <h3>Image to Video</h3>
+
+              <p>
+                Bring still images to life through
+                AI-powered animation and motion.
+              </p>
+
+              <div class="model-capabilities">
+                <span>Image-based creation</span>
+                <span>Scene animation</span>
+                <span>Motion direction</span>
+              </div>
+
+              <a href="#create" class="model-action">
+                Open creation studio →
+              </a>
+
+            </article>
+
+          </div>
+
+          <section class="models-information">
+
+            <div class="models-information-icon">
+              ◈
+            </div>
+
+            <div>
+              <h3>More AI technologies are on the way</h3>
+
+              <p>
+                VYRON AI will support selected third-party
+                video-generation providers as integrations
+                are developed and tested.
+              </p>
             </div>
 
           </section>
