@@ -3,7 +3,7 @@
 
 /* =========================================
    VYRON AI - ROUTER
-   VERSION 2.1.0
+   VERSION 2.2.0
 ========================================= */
 
 (function (window, document) {
@@ -43,11 +43,7 @@
 
     models: {
       title: "AI Models",
-      render: () => window.VYRON_APP.renderPlaceholder(
-        "AI Models",
-        "Explore the artificial intelligence models powering VYRON AI.",
-        "◈"
-      )
+      render: () => window.VYRON_APP.renderModels()
     },
 
     /* =====================================
