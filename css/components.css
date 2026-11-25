@@ -1043,3 +1043,284 @@
     transition: none;
   }
 }
+
+/* =========================================
+   VYRON AI - STAGE 02.5.3
+   PREMIUM MY LIBRARY INTERFACE
+========================================= */
+
+/* LIBRARY PAGE */
+
+.library-page {
+  width: 100%;
+  min-width: 0;
+  animation: libraryFadeIn .35s ease;
+}
+
+@keyframes libraryFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(7px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* LIBRARY HEADER */
+
+.library-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+  margin-bottom: 30px;
+}
+
+.library-header h1 {
+  color: var(--text-primary);
+  font-size: clamp(26px, 3vw, 35px);
+  line-height: 1.25;
+  font-weight: 750;
+  letter-spacing: -1.2px;
+}
+
+.library-header p {
+  color: var(--text-secondary);
+  font-size: 13px;
+  line-height: 1.7;
+  margin-top: 9px;
+}
+
+.library-header .primary-button {
+  flex-shrink: 0;
+  text-decoration: none;
+  box-shadow: 0 5px 18px rgba(82,111,255,.16);
+}
+
+.library-header .primary-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 23px rgba(82,111,255,.25);
+}
+
+/* LIBRARY STATISTICS */
+
+.library-overview {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 17px;
+  margin-bottom: 30px;
+}
+
+.library-stat {
+  position: relative;
+  min-width: 0;
+  min-height: 125px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 11px;
+  padding: 20px;
+  overflow: hidden;
+  background:
+    linear-gradient(
+      145deg,
+      rgba(82,111,255,.055),
+      transparent 75%
+    ),
+    var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  transition: var(--transition);
+}
+
+.library-stat:hover {
+  border-color: rgba(110,135,255,.35);
+  transform: translateY(-2px);
+}
+
+.library-stat span {
+  color: var(--text-secondary);
+  font-size: 11px;
+  font-weight: 550;
+}
+
+.library-stat strong {
+  color: var(--text-primary);
+  font-size: 27px;
+  line-height: 1.2;
+  font-weight: 750;
+  letter-spacing: -.7px;
+}
+
+/* LIBRARY TOOLBAR */
+
+.library-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.library-search {
+  min-width: 0;
+  flex: 1;
+  min-height: 45px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 0 14px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 9px;
+  transition: var(--transition);
+}
+
+.library-search:focus-within {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(82,111,255,.09);
+}
+
+.library-search > span {
+  color: var(--text-muted);
+  font-size: 21px;
+}
+
+.library-search input {
+  width: 100%;
+  min-width: 0;
+  border: 0;
+  outline: none;
+  background: transparent;
+  color: var(--text-primary);
+  font-size: 11px;
+}
+
+.library-search input::placeholder {
+  color: var(--text-muted);
+}
+
+.library-search input:disabled {
+  opacity: .65;
+  cursor: not-allowed;
+}
+
+.library-filter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.library-filter select {
+  min-width: 145px;
+  min-height: 45px;
+  padding: 0 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 9px;
+  outline: none;
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  font-size: 10px;
+}
+
+.library-filter select:disabled {
+  opacity: .7;
+  cursor: not-allowed;
+}
+
+/* LIBRARY CONTENT */
+
+.library-content {
+  min-height: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 35px 20px;
+  background:
+    radial-gradient(
+      ellipse at 50% 35%,
+      rgba(82,111,255,.055),
+      transparent 60%
+    ),
+    var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 15px;
+}
+
+/* EMPTY LIBRARY */
+
+.library-empty {
+  width: 100%;
+  max-width: 430px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.library-empty-icon {
+  width: 76px;
+  height: 76px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 22px;
+  border: 1px solid rgba(110,135,255,.25);
+  border-radius: 22px;
+  background:
+    linear-gradient(
+      145deg,
+      rgba(82,111,255,.18),
+      rgba(82,111,255,.06)
+    );
+  color: #AAB8FF;
+  font-size: 32px;
+  box-shadow: 0 10px 35px rgba(30,50,130,.13);
+}
+
+.library-empty h2 {
+  color: var(--text-primary);
+  font-size: 17px;
+  font-weight: 750;
+  margin-bottom: 10px;
+}
+
+.library-empty p {
+  max-width: 380px;
+  color: var(--text-secondary);
+  font-size: 11px;
+  line-height: 1.9;
+  margin-bottom: 21px;
+}
+
+.library-empty .primary-button {
+  text-decoration: none;
+  box-shadow: 0 5px 18px rgba(82,111,255,.15);
+}
+
+.library-empty .primary-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 23px rgba(82,111,255,.23);
+}
+
+/* LIBRARY ACCESSIBILITY */
+
+.library-header .primary-button:focus-visible,
+.library-empty .primary-button:focus-visible {
+  outline: 2px solid var(--accent-light);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .library-page {
+    animation: none;
+  }
+
+  .library-stat,
+  .library-header .primary-button,
+  .library-empty .primary-button {
+    transition: none;
+  }
+}
